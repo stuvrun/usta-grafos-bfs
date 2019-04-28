@@ -1,4 +1,4 @@
-# Foobar
+# Breadth-first search (BFS) algorithm
 
 Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures, it's base in FIFO 
 (first in first out) structure. It starts at the tree root (or some arbitrary nodeTest of a graph, sometimes referred to as 
