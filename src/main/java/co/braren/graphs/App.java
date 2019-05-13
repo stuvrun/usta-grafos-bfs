@@ -1,20 +1,35 @@
-package co.braren.bfs.algorithm;
+package co.braren.graphs;
 
-import co.braren.bfs.commons.MockData;
-import co.braren.bfs.model.Node;
-import org.junit.Assert;
-import org.junit.Test;
+import co.braren.graphs.algorithm.BreadthFirstSearch;
+import co.braren.graphs.commons.MockData;
+import co.braren.graphs.model.Node;
 
-public class BreadthFirstSearchTest {
+/**
+ * Hello world!
+ */
+public class App {
+    static String text = "Por favor indique el grafo a probar... -bfs -dfs";
 
-    @Test
-    public void shouldInstanceNotNull() {
-        BreadthFirstSearch bfsExample = new BreadthFirstSearch();
-        Assert.assertNotNull(bfsExample);
+    public static void main(String[] args) {
+
+        if (args == null || args.length == 0) {
+            args = new String[1];
+            args[0] = "";
+        }
+
+        switch (args[0]) {
+            case "-bfs":
+                text = "El resultado del análisis de los nodos con BFS fue:\n\t" + App.initBFS() + "\n";
+                break;
+            case "-dfs":
+                text = "En proceso...";
+                break;
+        }
+
+        System.out.println(text);
     }
 
-    @Test
-    public void shouldNotThrow() {
+    public static String initBFS() {
         Node nodeA = new Node(MockData.TEST_DATA_A);
         Node nodeB = new Node(MockData.TEST_DATA_B);
         Node nodeC = new Node(MockData.TEST_DATA_C);
@@ -35,7 +50,6 @@ public class BreadthFirstSearchTest {
         nodeG.setNeighbor(nodeI);
 
         BreadthFirstSearch bfsExample = new BreadthFirstSearch();
-        String graphNodes = bfsExample.init(nodeA);
-        Assert.assertEquals(MockData.ALG_BFS_FULL_RESULT, graphNodes);
+        return bfsExample.init(nodeA);
     }
 }

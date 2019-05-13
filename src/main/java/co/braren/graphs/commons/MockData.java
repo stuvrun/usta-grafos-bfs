@@ -1,4 +1,4 @@
-package co.braren.bfs.commons;
+package co.braren.graphs.commons;
 
 public class MockData {
 

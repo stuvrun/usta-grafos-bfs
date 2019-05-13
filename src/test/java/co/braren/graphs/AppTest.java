@@ -1,6 +1,6 @@
-package co.braren.bfs;
+package co.braren.graphs;
 
-import co.braren.bfs.commons.MockData;
+import co.braren.graphs.commons.MockData;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,8 +9,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{
+public class AppTest {
 
     @Test
     public void shouldInstanceNotNull() {
@@ -28,6 +27,6 @@ public class AppTest
     public void shouldMainRun() {
         App app = new App();
         app.main(null);
-        assertTrue( true );
+        assertTrue(true);
     }
 }

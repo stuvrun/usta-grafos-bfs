@@ -1,4 +1,4 @@
-package co.braren.bfs.model;
+package co.braren.graphs.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
-package co.braren.bfs.model;
+package co.braren.graphs.model;
 
-import co.braren.bfs.commons.MockData;
+import co.braren.graphs.commons.MockData;
 import org.junit.Assert;
 import org.junit.Test;
 

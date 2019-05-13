@@ -1,4 +1,4 @@
-package co.braren.bfs.commons;
+package co.braren.graphs.commons;
 
 import org.junit.Assert;
 import org.junit.Test;

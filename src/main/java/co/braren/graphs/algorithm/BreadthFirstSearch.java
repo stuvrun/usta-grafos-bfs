@@ -1,6 +1,6 @@
-package co.braren.bfs.algorithm;
+package co.braren.graphs.algorithm;
 
-import co.braren.bfs.model.Node;
+import co.braren.graphs.model.Node;
 
 import java.util.LinkedList;
 import java.util.List;
