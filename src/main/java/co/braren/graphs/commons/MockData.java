@@ -11,5 +11,8 @@ public class MockData {
     public final static String TEST_DATA_G = "G";
     public final static String TEST_DATA_H = "H";
     public final static String TEST_DATA_I = "I";
+    public final static String TEST_DATA_J = "J";
+    public final static String TEST_DATA_K = "K";
     public final static String ALG_BFS_FULL_RESULT = "A - B - F - C - D - G - E - H - I - ";
+    public final static String ALG_DFS_FULL_RESULT = "A - B - C - D - E - F - G - H - I - J - K - ";
 }
